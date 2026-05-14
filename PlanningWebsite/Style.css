@@ -30,40 +30,43 @@ body {
 }
 
 .Block {
-  padding: 20px;
+  padding: 1vw;
   background-color: #9dffa5b7;
   border-radius: 1vw;
   z-index: 0;
 }
 
-.SecondBlock {
-  padding: 20px;
+.Block1 {
+  visibility: hidden;
+  padding: 1vw;
   background-color: #92e2ffb7;
   border-radius: 1vw;
   z-index: 0;
 }
 
-.ThirdBlock {
-  padding: 20px;
+.Block2 {
+  visibility: hidden;
+  padding: 1vw;
   background-color: #ff9d9db7;
   border-radius: 1vw;
   z-index: 0;
 }
 
-.FourthBlock {
-  padding: 20px;
+.Block3 {
+  padding: 1vw;
   background-color: #8471ffb7;
   border-radius: 1vw;
   z-index: 0;
 }
 
 .BuildingBlock{
-    margin-bottom: 1.2vw;
+  margin-bottom: 1.2vw;
   width: 15vw;
   height: 8vw;
   background-color: #ffffff;
   border-radius: 1vw;
-  z-index: 1;
+  visibility: hidden;
+  z-index: -1;
 }
 
 .button {
@@ -71,12 +74,13 @@ body {
   height: 2.5vw;
   border-radius: 2vw;
   font-size: 1.2vw;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.797);
+  margin-bottom: 1vw;
   border: none;
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, 0.543);
+  background-color: rgba(255, 255, 255, 0.338);
 }
 
 .OptionBlock {
@@ -88,7 +92,7 @@ body {
   width: 25vw;
   height: 33vw;
   margin-left: 38vw;
-  margin-top: 10vw;
+  margin-top: 1vw;
 }
 
 .OptionText {
@@ -98,11 +102,37 @@ body {
   font-size: 1vw;
 }
 
-#TitleColor {
+.ConfirmButton {
+  width: 5vw;
+  height: 3.6vw;
+  border-radius: 1vw;
+  background-color: rgb(16, 124, 190);
+  border-color: white;
+}
+
+.ConfirmButton:hover {
+  width: 5.2vw;
+  height: 3.9vw;
+  background-color: rgb(10, 108, 169);  
+}
+
+.ConfirmText {
+  margin-top: 4vw;
+}
+
+#TitleInput {
+  height: 1.3vw;
   width: 9vw;
-  border: none;
+  text-align: center;
+  font-size: 1vw;
+}
+
+#TitleColor {
+  height: 1.3vw;
+  width: 9vw;
 }
 
 #BackgroundColor {
+  height: 1.3vw;
   width: 9vw;
 }
