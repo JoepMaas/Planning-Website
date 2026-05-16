@@ -69,6 +69,15 @@ body {
   z-index: -1;
 }
 
+.AddContainer {
+  border-radius: 2vw;
+  font-size: 2vw;
+  border: none;
+  background-color: rgb(179, 179, 159);
+  width: 3vw;
+  height: 3vw;
+}
+
 .button {
   width: 15vw;
   height: 2.5vw;
