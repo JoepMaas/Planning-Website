@@ -1,0 +1,76 @@
+body {
+  margin: 0;  
+  font-size: 1vw;
+}
+
+.HeadText {
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  font-size: 1.2vw
+}
+
+.New-Board {
+  margin-top: 3vw;
+}
+
+.Inspector {
+  margin-top: 2vw;
+  margin-left: 1vw;
+  width: 16vw;
+  height: 100vh;
+  border-style: solid;
+  border-width: .2vw;
+  border-color: rgba(0, 0, 0, 0.178);
+  border-left: transparent;
+  border-bottom: transparent;
+  border-top: transparent;
+}
+
+.DisplaySpace {
+  position: absolute;
+  z-index: 0;
+  height: 3vw;
+  width: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: rgba(128, 128, 128, 0.194);
+  border-radius: .5vw;
+}
+
+.Workspace {
+  width: 8vw;
+  margin-top: 3vw;
+  margin-left: 1vw;
+}
+
+#WorkspaceDropdown {
+  width: 11vw;
+  height: 3vw;
+  border: transparent;
+  font-size: 1.2vw;
+  border-radius: .4vw;
+  margin-left: 3.5vw;
+}
+
+#WorkspaceDropdown:hover {
+  background-color: rgba(0, 0, 0, 0.135);
+}
+
+#Overview {
+  margin: 1vw;
+  margin-top: 2vw;
+  margin-left: 0vw;
+}
+
+.TopBar {
+  position: absolute;
+  z-index: 1;
+
+  margin-left: 20vw;
+}
+
+.Projects {
+  width: 10vw;
+}

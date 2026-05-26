@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    background-color: rgb(248, 248, 227);
+}
+
+.TitleContainer{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+} 
+
+.Title {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-top: .5vw;
+    font-size: 1.2vw;
+}
+
+.MainContainer {
+  display: flex;
+  gap: 2vw;
+  align-items: flex-start;
+}
+
+.BlockContainer{
+    padding-top: 2vw;
+    margin-left: 2vw;
+}
+
+.Block {
+  padding: 1vw;
+  background-color: #9dffa5b7;
+  border-radius: 1vw;
+  z-index: 0;
+}
+
+.Block1 {
+  visibility: hidden;
+  padding: 1vw;
+  background-color: #92e2ffb7;
+  border-radius: 1vw;
+  z-index: 0;
+}
+
+.Block2 {
+  visibility: hidden;
+  padding: 1vw;
+  background-color: #ff9d9db7;
+  border-radius: 1vw;
+  z-index: 0;
+}
+
+.Block3 {
+  padding: 1vw;
+  background-color: #8471ffb7;
+  border-radius: 1vw;
+  z-index: 0;
+}
+
+.BuildingBlock{
+  margin-bottom: 1.2vw;
+  width: 15vw;
+  padding-bottom: 1vw;
+  background-color: #ffffff;
+  border-radius: 1vw;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.AddContainer {
+  border-radius: 2vw;
+  margin-top: 1vw;
+  font-size: 2vw;
+  border: none;
+  background-color: rgb(179, 179, 159);
+  width: 3vw;
+  height: 3vw;
+}
+
+.button {
+  width: 15vw;
+  height: 2.5vw;
+  border-radius: 2vw;
+  font-size: 1.2vw;
+  background: rgba(255, 255, 255, 0.797);
+  margin-bottom: 1vw;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.338);
+}
+
+.OptionBlock {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  border-radius: 1vw;
+  background-color: rgba(0, 0, 0, 0.895);
+  width: 25vw;
+  height: 33vw;
+  margin-left: 38vw;
+  margin-top: 1vw;
+}
+
+.OptionText {
+  text-align: center;
+
+  color: white;
+  font-size: 1vw;
+}
+
+.ConfirmButton {
+  width: 5vw;
+  height: 3.6vw;
+  border-radius: 1vw;
+  background-color: rgb(16, 124, 190);
+  border-color: white;
+}
+
+.ConfirmButton:hover {
+  width: 5.2vw;
+  height: 3.9vw;
+  background-color: rgb(10, 108, 169);  
+}
+
+.ConfirmText {
+  margin-top: 4vw;
+}
+
+#TitleInput {
+  height: 1.3vw;
+  width: 9vw;
+  text-align: center;
+  font-size: 1vw;
+}
+
+#TitleColor {
+  height: 1.3vw;
+  width: 9vw;
+}
+
+#BackgroundColor {
+  height: 1.3vw;
+  width: 9vw;
+}
