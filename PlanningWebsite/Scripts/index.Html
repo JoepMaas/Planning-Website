@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>Planning Site</title>
+</head>
+
+<body>
+    <img src="../Images/PFPtest (2).jpg" alt="Profile" id="Profile">
+    <img src="../Images/search-icon-png-1.png" alt="SearchIcon" id="SearchIcon">
+
+    <div class="OpenSpace">
+    <h1 id="WelcomeTitle">Good to see you again, Joep!</h1>
+        <p style="margin-top: .5vw; color: gray;">Here's what's happening in your workspace.</p>
+
+        <div class="ContainerDivs">
+            <div id="TaskOverview">
+                <h3>Task Overview</h3>
+            </div>
+            <div id="Upcoming">
+                <h3>Upcoming</h3>
+            </div>
+            <div id="Projects">
+                <h3>Projects</h3>
+            </div>
+            <div id="RecentActivity">
+                <h3>Recent Activity</h3>
+            </div>
+            <div id="MyTasks">
+                <h3>My Tasks</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="TopBar">
+        <button id="HomeTop">Home</button>
+        <button id="BoardsTop">Boards</button>
+        <button id="CalendarTop">Calendar</button>
+        <button id="SettingsTop">Settings</button>
+
+        <input type="text" class="SearchBar" placeholder="Search...">
+    </div>
+
+    <div class="Outlines">
+        <div class="TopBarOutline"></div>
+        <div class="TopBarPFPOutline"></div>
+    </div>
+
+    <div class="Inspector">
+        <h2 id="ChosenWorkspace">WORKSPACE</h2>
+        <div class="Workspace">
+            <h3 class="HeadText">WORKSPACE</h3>
+            <h3 class="DisplaySpace">M</h3>
+            <select name="Workspace" id="WorkspaceDropdown">
+                <option value="1">MyWorkspace 1</option>
+                <option value="Add">New Workspace</option>
+            </select>
+            <div>
+                <button id="Home">Home</button>
+            </div>
+            <div>
+                <button id="Boards">Boards</button>
+            </div>
+            <div>
+                <button id="Calendar">Calendar</button>
+            </div>
+            <div>
+                <button id="Settings">Settings</button>
+            </div>
+        </div>
+        <div class="Projects">
+            <h3 class="HeadText">PROJECTS</h3>
+            <button id="NewProject">+</button>
+            <button id="Project1">Project 1</button>
+
+        </div>
+    </div>
+
+</body>
+    <script src="mainHandeler.js"></script>
+</html>

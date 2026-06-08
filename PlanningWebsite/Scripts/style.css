@@ -1,4 +1,6 @@
 body {
+   font-family: "Roboto", sans-serif;
+
   margin: 0;  
   font-size: 1vw;
 }
@@ -6,7 +8,9 @@ body {
 .HeadText {
   margin-top: 2vw;
   margin-bottom: 1vw;
-  font-size: 1.2vw
+  font-size: 1vw;
+  margin-left: 1vw;
+  color: gray;
 }
 
 .New-Board {
@@ -15,12 +19,8 @@ body {
 
 .Inspector {
   margin-top: 2vw;
-  margin-left: 1vw;
   width: 16vw;
-  height: 100vh;
-  border-style: solid;
-  border-width: .2vw;
-  border-color: rgba(0, 0, 0, 0.178);
+  height: 90vh;
   border-left: transparent;
   border-bottom: transparent;
   border-top: transparent;
@@ -29,48 +29,320 @@ body {
 .DisplaySpace {
   position: absolute;
   z-index: 0;
-  height: 3vw;
-  width: 3vw;
+  height: 2.2vw;
+  width: 2.2vw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   background-color: rgba(128, 128, 128, 0.194);
   border-radius: .5vw;
+  margin-top: .4vw;
+  margin-left: 1vw;
+}
+
+#ChosenWorkspace {
+  margin-left: 2.5vw;
 }
 
 .Workspace {
   width: 8vw;
   margin-top: 3vw;
-  margin-left: 1vw;
 }
 
 #WorkspaceDropdown {
   width: 11vw;
-  height: 3vw;
+  margin-top: .5vw;
+  height: 2vw;
   border: transparent;
-  font-size: 1.2vw;
+  font-size: 1vw;
   border-radius: .4vw;
-  margin-left: 3.5vw;
+  margin-left: 4vw;
+  margin-bottom: 1vw;
 }
 
 #WorkspaceDropdown:hover {
   background-color: rgba(0, 0, 0, 0.135);
 }
 
-#Overview {
+#Home {
   margin: 1vw;
-  margin-top: 2vw;
   margin-left: 0vw;
+  width: 15.5vw;
+  height: 2vw;
+  font-size: 1vw;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#Home:hover {
+  background-color: rgba(180, 180, 180, 0.301);
+}
+
+#Boards {
+  margin: 1vw;
+  margin-left: 0vw;
+  margin-top: -.5vw;
+  width: 15.5vw;
+  height: 2vw;
+  font-size: 1vw;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#Boards:hover {
+  background-color: rgba(180, 180, 180, 0.301);
+}
+
+#Calendar {
+  margin: 1vw;
+  margin-left: 0vw;
+  margin-top: -.5vw;
+  width: 15.5vw;
+  height: 2vw;
+  font-size: 1vw;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#Calendar:hover {
+  background-color: rgba(180, 180, 180, 0.301);
+}
+
+#Settings {
+  margin: 1vw;
+  margin-left: 0vw;
+  margin-top: -.5vw;
+  width: 15.5vw;
+  height: 2vw;
+  font-size: 1vw;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#Settings:hover {
+  background-color: rgba(180, 180, 180, 0.301);
+}
+
+
+#NewProject {
+  position: absolute;
+  z-index: 2;
+  height: 1.2vw;
+  width: 1.2vw;
+  margin-top: -2.2vw;
+  margin-left: 13.5vw;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+
+  color: gray;
+
+  transition: width .5s ease 0s, height .5s ease 0s, background-color, .5s ease 0s;
+} 
+
+#NewProject:hover {
+  border-radius: 2vw;
+  background-color: rgba(0, 0, 0, 0.174);
+  height: 1.5vw;
+  width: 1.5vw;
+  margin-top: -2.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw; 
+}
+
+.Projects {
+  width: 10vw;
+  color: gray;
+}
+
+.Outlines {
+  position: absolute;
+  z-index: 2;
+  margin-top: -2vw;
+  height: 100vh;
+  margin-left: 15.8vw;
+  width: .1vw;
+  background-color: rgb(177, 177, 177);
+}
+
+.TopBarOutline {
+  position: absolute;
+  z-index: 3;
+  margin-top: 5vw;
+  width: 100vw;
+  margin-left: -16vw;
+  height: .1vw;
+  background-color: rgb(177, 177, 177);
+}
+
+.TopBarPFPOutline {
+  position: absolute;
+  z-index: 3;
+  width: .1vw;
+  margin-left: 77vw;
+  height: 5vw;
+  background-color: rgb(177, 177, 177);
+}
+
+#Project1 {
+  margin: 1vw;
+  margin-left: 0vw;
+  margin-top: -.3vw;
+  width: 15.5vw;
+  height: 2vw;
+  font-size: 1vw;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+#Project1:hover {
+  background-color: rgba(180, 180, 180, 0.301);
 }
 
 .TopBar {
   position: absolute;
   z-index: 1;
 
-  margin-left: 20vw;
+  margin-top: -.8vw;
+  margin-left: 18vw;
 }
 
-.Projects {
-  width: 10vw;
+#HomeTop {
+  width: 5vw;
+  height: 2vw;
+  font-size: 1vw;
+  margin-left: 2vw;
+  border: none;
+  background-color: white;
+}
+
+#BoardsTop {
+  width: 5vw;
+  height: 2vw;
+  font-size: 1vw;
+  margin-left: 2.5vw;
+  border: none;
+  background-color: white;
+}
+
+#CalendarTop {
+  width: 5vw;
+  height: 2vw;
+  font-size: 1vw;
+  margin-left: 2.5vw;
+  border: none;
+  background-color: white;
+}
+
+#SettingsTop {
+  width: 5vw;
+  height: 2vw;
+  font-size: 1vw;
+  margin-left: 2.5vw;
+  border: none;
+  background-color: white;
+}
+
+.SearchBar {
+  width: 14vw;
+  height: 2vw;
+  padding-left: 3vw;
+  font-size: .8vw;
+  border-radius: .3vw;
+  margin-left: 25vw;
+  border: 2px solid;
+  border-color: rgba(128, 128, 128, 0.301);
+}
+
+#Profile {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 2vw;
+  margin-top: -1.3vw;
+  margin-left: 95vw;
+}
+
+#SearchIcon {
+  position: absolute;
+  z-index: 3;
+  margin-left: 73vw;
+  margin-top: -1.6vw;
+  width: 3.9vw;
+}
+
+.OpenSpace {
+  position: absolute;
+  z-index: 4;
+  margin-top: 3.1vw;
+  margin-left: 15.9vw;
+  padding-left: 1.7vw;
+  height: 45.5vw;
+  width: 82vw;
+  background-color: rgba(0, 0, 0, 0.066);
+}
+
+#WelcomeTitle {
+  font-size: 2vw;
+  margin-bottom: 0vw;
+}
+
+.ContainerDivs {
+  display: flex;
+  width: 80vw;
+  height: 38vw;
+  gap: 1.5vw;
+
+  flex-wrap: wrap;
+}
+
+#TaskOverview {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  border: 2px solid rgba(128, 128, 128, 0.566);
+  width: 26.5vw;
+  height: 18vw;
+  padding-left: 1.5vw;
+}
+
+#Upcoming {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  border: 2px solid rgba(128, 128, 128, 0.566);
+  width: 19.5vw;
+  height: 18vw;
+  padding-left: 1.5vw;
+}
+
+#Projects {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  border: 2px solid rgba(128, 128, 128, 0.566);
+  width: 24.5vw;
+  height: 18vw;
+  padding-left: 1.5vw;
+}
+
+#RecentActivity {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  border: 2px solid rgba(128, 128, 128, 0.566);
+  width: 35.5vw;
+  height: 18vw;
+  padding-left: 1.5vw;
+}
+
+#MyTasks {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vw;
+  border: 2px solid rgba(128, 128, 128, 0.566);
+  width: 38.5vw;
+  height: 18vw;
+  padding-left: 1.5vw;
 }
