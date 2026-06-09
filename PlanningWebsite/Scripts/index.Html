@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <title>Planning Site</title>
 </head>
 
@@ -17,27 +18,30 @@
     <img src="../Images/search-icon-png-1.png" alt="SearchIcon" id="SearchIcon">
 
     <div class="OpenSpace">
-    <h1 id="WelcomeTitle">Good to see you again, Joep!</h1>
-        <p style="margin-top: .5vw; color: gray;">Here's what's happening in your workspace.</p>
+        <div style="margin: 0;">
+            <h1 id="WelcomeTitle">Good to see you again, Joep!</h1>
+            <p style="margin-top: .5vw; color: rgb(84, 83, 83);">Here's what's happening in your workspace.</p>
 
-        <div class="ContainerDivs">
-            <div id="TaskOverview">
-                <h3>Task Overview</h3>
-            </div>
-            <div id="Upcoming">
-                <h3>Upcoming</h3>
-            </div>
-            <div id="Projects">
-                <h3>Projects</h3>
-            </div>
-            <div id="RecentActivity">
-                <h3>Recent Activity</h3>
-            </div>
-            <div id="MyTasks">
-                <h3>My Tasks</h3>
+            <div class="ContainerDivs">
+                <div id="TaskOverview">
+                    <h3>Task Overview</h3>
+                </div>
+                <div id="Upcoming">
+                    <h3>Upcoming</h3>
+                </div>
+                <div id="Projects">
+                    <h3>Projects</h3>
+                </div>
+                <div id="RecentActivity">
+                    <h3>Recent Activity</h3>
+                </div>
+                <div id="MyTasks">
+                    <h3>My Tasks</h3>
+                </div>
             </div>
         </div>
     </div>
+
 
     <div class="TopBar">
         <button id="HomeTop">Home</button>
@@ -45,6 +49,7 @@
         <button id="CalendarTop">Calendar</button>
         <button id="SettingsTop">Settings</button>
 
+        <div class="Underline"></div>
         <input type="text" class="SearchBar" placeholder="Search...">
     </div>
 
@@ -63,16 +68,16 @@
                 <option value="Add">New Workspace</option>
             </select>
             <div>
-                <button id="Home">Home</button>
+                <button onclick="UpdateSelected('Home')" id="Home">Home</button>
             </div>
             <div>
-                <button id="Boards">Boards</button>
+                <button onclick="UpdateSelected('Boards')" id="Boards">Boards</button>
             </div>
             <div>
-                <button id="Calendar">Calendar</button>
+                <button onclick="UpdateSelected('Calendar')" id="Calendar">Calendar</button>
             </div>
             <div>
-                <button id="Settings">Settings</button>
+                <button onclick="UpdateSelected('Settings')" id="Settings">Settings</button>
             </div>
         </div>
         <div class="Projects">
@@ -84,5 +89,6 @@
     </div>
 
 </body>
-    <script src="mainHandeler.js"></script>
+<script src="mainHandeler.js"></script>
+
 </html>

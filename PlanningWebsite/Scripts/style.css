@@ -1,6 +1,7 @@
 body {
-   font-family: "Roboto", sans-serif;
-
+  font-family: "Roboto", sans-serif;
+  
+  overflow: hidden;
   margin: 0;  
   font-size: 1vw;
 }
@@ -283,7 +284,7 @@ body {
   margin-top: 3.1vw;
   margin-left: 15.9vw;
   padding-left: 1.7vw;
-  height: 45.5vw;
+  height: 100%;
   width: 82vw;
   background-color: rgba(0, 0, 0, 0.066);
 }
@@ -345,4 +346,16 @@ body {
   width: 38.5vw;
   height: 18vw;
   padding-left: 1.5vw;
+}
+
+.Underline {
+  position: absolute;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.219);
+  width: 4vw;
+  height: .4vw;
+
+  margin-top: .4vw;
+  margin-left: 18.1vw;
+  visibility: hidden;
 }

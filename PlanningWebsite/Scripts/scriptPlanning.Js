@@ -8,6 +8,8 @@ let OptionBlock;
 let BlockVisible;
 let blockType;
 let block;
+let Titlecolor;
+let DivBackgroundColor;
 
 
 function loaded() {
@@ -15,6 +17,8 @@ function loaded() {
     text = document.getElementById("textting");
     OptionBlock = document.getElementById("OptionBlock")
     block = document.getElementById("Block");
+    Titlecolor = document.getElementById("TitleColor")
+    DivBackgroundColor = document.getElementById("BackgroundColor");
 }
 
 function button(blockThing) {
@@ -30,8 +34,13 @@ function Confirm() {
 
     if (document.getElementById("TitleInput").value.length < 20 && document.getElementById("TitleInput").value.length != 0) { // needs input, also less than 20 characters
         document.getElementsByClassName(blockType)[0].appendChild(copy);
+        
+        let Title = copy.getElementsByClassName('Title')[0];
+        Title.innerHTML = document.getElementById("TitleInput").value;
+        Title.style.color = Titlecolor.value;
 
-        copy.getElementsByClassName('Title')[0].innerHTML = document.getElementById("TitleInput").value;
+        copy.style.backgroundColor = DivBackgroundColor.value;
+      
         copy.style.visibility = "Visible";
         OptionBlock.style.visibility = "Hidden";
         document.getElementsByClassName(blockType)[0].style.visibility = "Visible";
