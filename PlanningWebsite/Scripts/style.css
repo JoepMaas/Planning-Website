@@ -69,7 +69,7 @@ body {
 #Home {
   margin: 1vw;
   margin-left: 0vw;
-  width: 15.5vw;
+  width: 15.8vw;
   height: 2vw;
   font-size: 1vw;
   border-color: transparent;
@@ -84,7 +84,7 @@ body {
   margin: 1vw;
   margin-left: 0vw;
   margin-top: -.5vw;
-  width: 15.5vw;
+  width: 15.8vw;
   height: 2vw;
   font-size: 1vw;
   border-color: transparent;
@@ -99,7 +99,7 @@ body {
   margin: 1vw;
   margin-left: 0vw;
   margin-top: -.5vw;
-  width: 15.5vw;
+  width: 15.8vw;
   height: 2vw;
   font-size: 1vw;
   border-color: transparent;
@@ -114,7 +114,7 @@ body {
   margin: 1vw;
   margin-left: 0vw;
   margin-top: -.5vw;
-  width: 15.5vw;
+  width: 15.8vw;
   height: 2vw;
   font-size: 1vw;
   border-color: transparent;
@@ -214,6 +214,10 @@ body {
   margin-left: 18vw;
 }
 
+#BoardsTab {
+  display: none;
+}
+
 #HomeTop {
   width: 5vw;
   height: 2vw;
@@ -279,6 +283,7 @@ body {
 }
 
 .OpenSpace {
+  margin: 0;
   position: absolute;
   z-index: 4;
   margin-top: 3.1vw;
@@ -359,3 +364,4 @@ body {
   margin-left: 18.1vw;
   visibility: hidden;
 }
+

@@ -1,0 +1,22 @@
+.BoardsContainer {
+    margin-top: 2.5vw;
+    display: flex;
+    gap: 1vw;
+}
+
+#TitleBoard {
+  border: hidden;
+  font-size: 2vw;
+  margin-top: 1.25vw;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 500;
+}
+
+#board {
+    height: 5vw;
+    width: 14vw;
+    background-color: rgba(0, 0, 0, 0.023);
+
+    border: .15vw solid rgba(0, 0, 0, 0.055);
+    border-radius: .5vw;
+}

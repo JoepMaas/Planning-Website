@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleBoard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,7 +19,7 @@
     <img src="../Images/search-icon-png-1.png" alt="SearchIcon" id="SearchIcon">
 
     <div class="OpenSpace">
-        <div style="margin: 0;">
+        <div id="HomeTab">
             <h1 id="WelcomeTitle">Good to see you again, Joep!</h1>
             <p style="margin-top: .5vw; color: rgb(84, 83, 83);">Here's what's happening in your workspace.</p>
 
@@ -40,14 +41,33 @@
                 </div>
             </div>
         </div>
+
+        <div id="BoardsTab">
+            <input id="TitleBoard" type="text" placeholder="Title....">
+
+            <div class="BoardsContainer">
+
+                <div id="board">
+                    <h2>to do</h2>
+                </div>
+
+                <div id="board">
+                    <h2>in progress</h2>
+                </div>
+                
+                <div id="board">
+                    <h2>review</h2>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <div class="TopBar">
-        <button id="HomeTop">Home</button>
-        <button id="BoardsTop">Boards</button>
-        <button id="CalendarTop">Calendar</button>
-        <button id="SettingsTop">Settings</button>
+        <button onclick="UpdateSelected(0)" id="HomeTop">Home</button>
+        <button onclick="UpdateSelected(1)" id="BoardsTop">Boards</button>
+        <button onclick="UpdateSelected(2)" id="CalendarTop">Calendar</button>
+        <button onclick="UpdateSelected(3)" id="SettingsTop">Settings</button>
 
         <div class="Underline"></div>
         <input type="text" class="SearchBar" placeholder="Search...">
@@ -68,16 +88,16 @@
                 <option value="Add">New Workspace</option>
             </select>
             <div>
-                <button onclick="UpdateSelected('Home')" id="Home">Home</button>
+                <button onclick="UpdateSelected(0)" id="Home">Home</button>
             </div>
             <div>
-                <button onclick="UpdateSelected('Boards')" id="Boards">Boards</button>
+                <button onclick="UpdateSelected(1)" id="Boards">Boards</button>
             </div>
             <div>
-                <button onclick="UpdateSelected('Calendar')" id="Calendar">Calendar</button>
+                <button onclick="UpdateSelected(2)" id="Calendar">Calendar</button>
             </div>
             <div>
-                <button onclick="UpdateSelected('Settings')" id="Settings">Settings</button>
+                <button onclick="UpdateSelected(3)" id="Settings">Settings</button>
             </div>
         </div>
         <div class="Projects">
