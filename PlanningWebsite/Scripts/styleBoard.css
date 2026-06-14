@@ -7,7 +7,7 @@
 #TitleBoard {
   border: hidden;
   font-size: 2vw;
-  margin-top: 1.25vw;
+  margin-top: 2.5vw;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 500;
 }
@@ -15,8 +15,32 @@
 #board {
     height: 5vw;
     width: 14vw;
-    background-color: rgba(0, 0, 0, 0.023);
+    background-color: rgb(255, 255, 255);
 
-    border: .15vw solid rgba(0, 0, 0, 0.055);
+    border: 2px solid rgba(128, 128, 128, 0.566);
     border-radius: .5vw;
+}
+
+#AddBoardB {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    border-color: transparent;
+    background-color: rgb(219, 219, 219);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     transition: width .5s ease 0s, height .5s ease 0s, background-color, .5s ease 0s;
+}
+
+#AddBoardB:hover {
+    width: 3vw;
+    height: 3vw;
+    margin-left: -.2vw;
+    margin-top: -.2vw;
+   
+    font-size: 2.8vw;
 }
