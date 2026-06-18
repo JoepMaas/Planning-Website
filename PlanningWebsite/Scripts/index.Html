@@ -47,12 +47,41 @@
 
             <div class="BoardsContainer">
 
-                <div id="board">
-                    <h2 id>to do</h2>
+                <div class="placeholderBoard1">
+                    <div class="titleBar">
+                        <input class="titleB" type="text" placeholder="Title....">
+                        <button class="EditBoard">...</button>
+                    </div>
+
+                    <div class="ItemB">
+                        <input type="text" class="TitleItem" placeholder="Input Title...">
+                        <textarea class="TextItem" placeholder="Input text..."></textarea>
+                    </div>
+                    
+                    <div class="DivAddCard">
+                        <button onclick="AddCard(0)" class="addCard">+ Add card</button>
+                    </div>
                 </div>
 
-                <div id="AddBoard">
-                    <button id="AddBoardB">+</button>
+                <div class="board1">
+                    <div class="titleBar">
+                          <input class="titleB" type="text" placeholder="Title....">
+                        <button class="EditBoard">...</button>
+                    </div>
+
+                    <div class="ItemB">
+                        <input type="text" class="TitleItem" placeholder="Input Title...">
+                        <textarea class="TextItem" placeholder="Input text..."></textarea>
+                    </div>
+                    
+                    <div class="DivAddCard">
+                        <button onclick="AddCard(0)" class="addCard">+ Add card</button>
+                    </div>
+                </div>
+
+                
+                <div class="AddBoard">
+                    <button onclick="AddBoard()" class="AddBoardB">+</button>
                 </div>
             </div>
         </div>

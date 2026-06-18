@@ -1,27 +1,174 @@
 .BoardsContainer {
+    display: flex;
+    align-items: flex-start;
     margin-top: 2.5vw;
     display: flex;
-    gap: 1vw;
+    gap: .7vw;
 }
 
 #TitleBoard {
   border: hidden;
   font-size: 2vw;
   margin-top: 2.5vw;
+  min-width: 120vh;
   background-color: rgba(0, 0, 0, 0);
   font-weight: 500;
 }
 
-#board {
-    height: 5vw;
-    width: 14vw;
-    background-color: rgb(255, 255, 255);
-
+.placeholderBoard1 {
+    position: relative;
+    z-index: 1;
+    margin-right: 1vw;
+    width: 14.5vw;
+    background-color: rgba(77, 77, 77, 0.144);
     border: 2px solid rgba(128, 128, 128, 0.566);
     border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    display: none;
 }
 
-#AddBoardB {
+.board1 {
+    position: relative;
+    z-index: 1;
+    margin-right: 1vw;
+    width: 14.5vw;
+    background-color: rgba(77, 77, 77, 0.144);
+    border: 2px solid rgba(128, 128, 128, 0.566);
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+.board2 {
+    position: relative;
+    z-index: 2;
+    margin-right: 1vw;
+    width: 14.5vw;
+    background-color: rgba(77, 77, 77, 0.144);
+    border: 2px solid rgba(128, 128, 128, 0.566);
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.board3 {
+    position: relative;
+    z-index: 3;
+    margin-right: 1vw;
+    width: 14.5vw;
+    background-color: rgba(77, 77, 77, 0.144);
+    border: 2px solid rgba(128, 128, 128, 0.566);
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.board4 {
+    position: relative;
+    z-index: 4;
+    margin-right: 1vw;
+    width: 14.5vw;
+    background-color: rgba(77, 77, 77, 0.144);
+    border: 2px solid rgba(128, 128, 128, 0.566);
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.board5 {
+    position: relative;
+    z-index: 5;
+    margin-right: 1vw;
+    width: 14.5vw;
+    background-color: rgba(77, 77, 77, 0.144);
+    border: 2px solid rgba(128, 128, 128, 0.566);
+    border-radius: .5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.titleBar {
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: -1vw;
+}
+
+.titleB {
+    position: relative;
+    z-index: 1;
+    margin-top: 1vw;
+    border: none;
+    background-color: transparent;
+    margin-left: 1.2vw;
+    padding-right: 1vw;
+    font-size: 1.3vw;
+    min-width: 8.6vw;
+    max-width: 8.7vw;
+    margin-bottom: .7vw;
+}
+
+.EditBoard {
+    display: flex;
+    height: 1vw;
+    width: 1vw;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+   margin-right: 1vw;
+   margin-top: .3vw;
+    margin-left: 1.4vw;
+    font-size: 2vw;
+}
+
+.TextItem {
+    margin-left: 1vw;
+    max-width: 10vw;
+    min-width: 10vw;
+    overflow-wrap: break-word;
+    border: none;
+    background-color: transparent;
+    height: 2vw;
+    margin-bottom: 1vw;
+    color: rgb(75, 75, 75);
+}
+
+.TitleItem {
+    font-size: 1vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    width: 10vw;
+    margin-bottom: .6vw;
+    background-color: transparent;
+    border: none;
+}
+
+.ItemB {
+    border-radius: .5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    background-color: rgba(255, 255, 255, 0.566);
+}
+
+.addCard {
+    height: 2vw;
+    width: 14.5vw ;
+    background-color: transparent;
+    border: none;
+    color: rgb(81, 81, 81);
+}
+
+.AddBoardB {
     width: 2.5vw;
     height: 2.5vw;
     border-radius: 2vw;
@@ -36,7 +183,7 @@
      transition: width .5s ease 0s, height .5s ease 0s, background-color, .5s ease 0s;
 }
 
-#AddBoardB:hover {
+.AddBoardB:hover {
     width: 3vw;
     height: 3vw;
     margin-left: -.2vw;
