@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styleBoard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
@@ -50,10 +51,11 @@
                 <div class="placeholderBoard1">
                     <div class="titleBar">
                         <input class="titleB" type="text" placeholder="Title....">
-                        <button class="EditBoard">...</button>
+                        <button onclick="EditBoard(0)" class="EditBoard">...</button>
                     </div>
 
                     <div class="ItemB">
+                        <button onclick="RemoveCard(this)" class="garbageIcon"><i class="fa fa-trash-o"></i></button>
                         <input type="text" class="TitleItem" placeholder="Input Title...">
                         <textarea class="TextItem" placeholder="Input text..."></textarea>
                     </div>
@@ -66,10 +68,11 @@
                 <div class="board1">
                     <div class="titleBar">
                           <input class="titleB" type="text" placeholder="Title....">
-                        <button class="EditBoard">...</button>
+                        <button onclick="EditBoard(0)" class="EditBoard">...</button>
                     </div>
 
                     <div class="ItemB">
+                        <button onclick="RemoveCard(this)" class="garbageIcon"><i class="fa fa-trash-o"></i></button>
                         <input type="text" class="TitleItem" placeholder="Input Title...">
                         <textarea class="TextItem" placeholder="Input text..."></textarea>
                     </div>

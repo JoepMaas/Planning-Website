@@ -6,6 +6,7 @@ function loaded () {
     
 }
 
+let maxCards = 10;
 let addedBoard = 0;
 let addedCard = [0,0,0,0,0];
 
@@ -24,14 +25,15 @@ function AddBoard() {
 
         const addCardBtn = copy.querySelector('.addCard');
         addCardBtn.setAttribute('onclick', `AddCard(${addedBoard})`);
+        
+        const EditBoardBtn = copy.querySelector('.EditBoard');
+        EditBoardBtn.setAttribute('onclick', `EditBoard(${addedBoard})`);
 
     
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copy);
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copyBoard);
     
         addBoard[0].remove();
-    
-
         if (addedBoard == 4) {
             addBoard[0].style.display = "none";
         }
@@ -39,27 +41,50 @@ function AddBoard() {
 }
 
 function AddCard(CardN) {
-    // if (addedCard < 4) {
     let item = document.getElementsByClassName("ItemB")[0];
     let addCard = document.getElementsByClassName("DivAddCard");
 
     let copyI = item.cloneNode(true);
     let copyC = addCard[CardN + 1].cloneNode(true);
 
+    let board = document.getElementsByClassName("board" + (CardN + 1))[0]; 
+    board.appendChild(copyI);
+    board.appendChild(copyC);
 
-    document.getElementsByClassName("board" + (CardN + 1))[0].appendChild(copyI);
-    document.getElementsByClassName("board" + (CardN + 1))[0].appendChild(copyC);
+    board.scrollTop = board.scrollHeight;
 
     addCard[CardN + 1].remove();
-   
 
     addedCard.splice(CardN, 1, addedCard[CardN] + 1);
-    console.log(addedCard[CardN]);
-
-    if (addedCard == 4 && CardN == 0) {
-        document.getElementsByClassName("addCard")[(CardN + 1)].style.display = "none";
-    }
-
- 
+    
+    //hiding: + add card
+    document.getElementsByClassName("addCard")[(CardN + 1)].style.display = (addedCard[CardN] == maxCards) ? "none" : "block";
 }
 
+let boardN = 0;
+
+function RemoveCard(btn){
+    ((btn.parentNode).parentNode).removeChild(btn.parentNode)
+
+    addedCard.splice(boardN, 1, (addedCard[boardN] -1));
+
+    if (addedCard[boardN] < 10) {
+        document.getElementsByClassName("addCard")[(boardN + 1)].style.display = "block";
+    }
+}
+
+let ToggledEditMode = false;
+
+
+function EditBoard(boardNumber) {
+    ToggledEditMode = !ToggledEditMode;
+
+    let board = document.getElementsByClassName("board" + (boardNumber + 1));
+    boardN = boardNumber;
+
+
+    
+    for (i = 0; i < addedCard[boardNumber] + 1; i++) { 
+            document.getElementsByClassName("garbageIcon")[addedCard[boardNumber] - i].style.display = ToggledEditMode ? "none" : "block";
+    }
+}
