@@ -8,11 +8,14 @@ function loaded () {
 
 let maxCards = 10;
 let addedBoard = 0;
+let boardN = 0;
 let addedCard = [0,0,0,0,0];
+let Opened = [false,false,false,false,false];
 
 function AddBoard() {
     if (addedBoard < 4) {
         addedBoard++;
+        ToggledEditMode = true;
         
         let board = document.getElementsByClassName("placeholderBoard1")[0];
         let addBoard = document.getElementsByClassName("AddBoard");
@@ -61,8 +64,6 @@ function AddCard(CardN) {
     document.getElementsByClassName("addCard")[(CardN + 1)].style.display = (addedCard[CardN] == maxCards) ? "none" : "block";
 }
 
-let boardN = 0;
-
 function RemoveCard(btn){
     ((btn.parentNode).parentNode).removeChild(btn.parentNode)
 
@@ -73,18 +74,14 @@ function RemoveCard(btn){
     }
 }
 
-let ToggledEditMode = false;
-
-
 function EditBoard(boardNumber) {
-    ToggledEditMode = !ToggledEditMode;
+    Opened[boardNumber] = !Opened[boardNumber];
 
-    let board = document.getElementsByClassName("board" + (boardNumber + 1));
+    let board = document.getElementsByClassName("board" + (boardNumber + 1))[0];
+    let items = board.querySelectorAll('.garbageIcon');
     boardN = boardNumber;
 
-
-    
-    for (i = 0; i < addedCard[boardNumber] + 1; i++) { 
-            document.getElementsByClassName("garbageIcon")[addedCard[boardNumber] - i].style.display = ToggledEditMode ? "none" : "block";
-    }
+    items.forEach(item => {
+        item.style.display = Opened[boardNumber] ? "none" : "block";
+    });
 }
