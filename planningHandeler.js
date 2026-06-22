@@ -81,13 +81,16 @@ function RemoveCard(btn){
 }
 
 function EditBoard(boardNumber) {
-    Opened[boardNumber] = !Opened[boardNumber];
+    if (addedCard[boardNumber] != 0) {
 
-    let board = document.getElementsByClassName("board" + (boardNumber + 1))[0];
-    let items = board.querySelectorAll('.garbageIcon');
-    boardN = boardNumber;
+        Opened[boardNumber] = !Opened[boardNumber];
 
-    items.forEach(item => {
-        item.style.display = Opened[boardNumber] ? "block" : "none";
-    });
+        let board = document.getElementsByClassName("board" + (boardNumber + 1))[0];
+        let items = board.querySelectorAll('.garbageIcon');
+        boardN = boardNumber;
+
+        items.forEach(item => {
+            item.style.display = Opened[boardNumber] ? "block" : "none";
+        });
+    }
 }
