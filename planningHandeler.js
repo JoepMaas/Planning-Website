@@ -30,7 +30,7 @@ function AddBoard() {
         addCardBtn.setAttribute('onclick', `AddCard(${addedBoard})`);
         
         const EditBoardBtn = copy.querySelector('.EditBoard');
-        EditBoardBtn.setAttribute('onclick', `EditBoard(${addedBoard})`);
+        EditBoardBtn.setAttribute('onclick', `EditBoard(${addedBoard, false})`);
     
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copy);
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copyBoard);
@@ -76,12 +76,12 @@ function RemoveCard(btn){
 
     if (addedCard[boardN] == 0)
     {
-        EditBoard(boardN);
+        EditBoard(boardN, true);
     }
 }
 
-function EditBoard(boardNumber) {
-    if (addedCard[boardNumber] != 0) {
+function EditBoard(boardNumber, bool) {
+    if (addedCard[boardNumber] != 0 || bool) {
 
         Opened[boardNumber] = !Opened[boardNumber];
 
