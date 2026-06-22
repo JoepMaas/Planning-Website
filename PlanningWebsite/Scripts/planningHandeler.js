@@ -31,7 +31,6 @@ function AddBoard() {
         
         const EditBoardBtn = copy.querySelector('.EditBoard');
         EditBoardBtn.setAttribute('onclick', `EditBoard(${addedBoard})`);
-
     
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copy);
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copyBoard);
@@ -40,28 +39,30 @@ function AddBoard() {
         if (addedBoard == 4) {
             addBoard[0].style.display = "none";
         }
+
     }
 }
 
-function AddCard(CardN) {
+function AddCard(boardNumber) {
     let item = document.getElementsByClassName("ItemB")[0];
     let addCard = document.getElementsByClassName("DivAddCard");
 
     let copyI = item.cloneNode(true);
-    let copyC = addCard[CardN + 1].cloneNode(true);
+    let copyC = addCard[boardNumber + 1].cloneNode(true);
 
-    let board = document.getElementsByClassName("board" + (CardN + 1))[0]; 
+    let board = document.getElementsByClassName("board" + (boardNumber + 1))[0]; 
     board.appendChild(copyI);
     board.appendChild(copyC);
-
+    
     board.scrollTop = board.scrollHeight;
-
-    addCard[CardN + 1].remove();
-
-    addedCard.splice(CardN, 1, addedCard[CardN] + 1);
+    
+    addCard[boardNumber + 1].remove();
+    
+    addedCard.splice(boardNumber, 1, addedCard[boardNumber] + 1);
     
     //hiding: + add card
-    document.getElementsByClassName("addCard")[(CardN + 1)].style.display = (addedCard[CardN] == maxCards) ? "none" : "block";
+    document.getElementsByClassName("addCard")[(boardNumber + 1)].style.display = (addedCard[boardNumber] == maxCards) ? "none" : "block";
+    copyI.getElementsByClassName("garbageIcon")[0].style.display = (Opened[boardNumber]) ? "block" : "none"; 
 }
 
 function RemoveCard(btn){
@@ -71,6 +72,11 @@ function RemoveCard(btn){
 
     if (addedCard[boardN] < 10) {
         document.getElementsByClassName("addCard")[(boardN + 1)].style.display = "block";
+    }
+
+    if (addedCard[boardN] == 0)
+    {
+        EditBoard(boardN);
     }
 }
 
@@ -82,6 +88,6 @@ function EditBoard(boardNumber) {
     boardN = boardNumber;
 
     items.forEach(item => {
-        item.style.display = Opened[boardNumber] ? "none" : "block";
+        item.style.display = Opened[boardNumber] ? "block" : "none";
     });
 }
