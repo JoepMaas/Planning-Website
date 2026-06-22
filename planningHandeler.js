@@ -30,7 +30,7 @@ function AddBoard() {
         addCardBtn.setAttribute('onclick', `AddCard(${addedBoard})`);
         
         const EditBoardBtn = copy.querySelector('.EditBoard');
-        EditBoardBtn.setAttribute('onclick', `EditBoard(${addedBoard, false})`);
+        EditBoardBtn.setAttribute('onclick', `EditBoard(${addedBoard}, false)`);
     
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copy);
         document.getElementsByClassName("BoardsContainer")[0].appendChild(copyBoard);
@@ -82,9 +82,19 @@ function RemoveCard(btn){
 
 function EditBoard(boardNumber, bool) {
     if (addedCard[boardNumber] != 0 || bool) {
+        Opened.forEach((ignore, i) => {
+            if (i !== boardNumber) {
+                Opened[i] = false;
+                let otherBoard = document.getElementsByClassName("board" + (i + 1))[0];
+                if (otherBoard) { 
+                    otherBoard.querySelectorAll('.garbageIcon').forEach(item => {
+                        item.style.display = "none";
+                    });
+                }
+            }
+        });
 
         Opened[boardNumber] = !Opened[boardNumber];
-
         let board = document.getElementsByClassName("board" + (boardNumber + 1))[0];
         let items = board.querySelectorAll('.garbageIcon');
         boardN = boardNumber;
