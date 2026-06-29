@@ -5,7 +5,7 @@ const newBoard = {
     items: [
         {
             itemName: "Item Naam",
-            textDescription: "Fuck scheikunde",
+            textDescription: "Fuck scheikunde"
         },
         {
             itemName: "Piemel",

@@ -6,6 +6,8 @@ function loaded() {
     loadData();
 }
 
+
+
 let maxCards = 10;
 let addedBoard = 0;
 let boardN = 0;

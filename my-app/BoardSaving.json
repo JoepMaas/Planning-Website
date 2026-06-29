@@ -12,6 +12,19 @@
           "textDescription": "352"
         }
       ]
+    },
+    {
+      "boardName": "Should do",
+      "items": [
+        {
+          "itemName": "Test 3",
+          "textDescription": "Um iets"
+        },
+        {
+          "itemName": "Test 4",
+          "textDescription": "Ding"
+        }
+      ]
     }
   ]
 }
