@@ -1,55 +1,17 @@
 {
-    "boards": [
+  "boards": [
+    {
+      "boardName": "To Do",
+      "items": [
         {
-            "boardName": "To Do",
-            "items": [
-                {
-                    "itemName": "Test 1",
-                    "textDescription": "e12"
-                },
-                {
-                    "itemName": "Test 2",
-                    "textDescription": "352"
-                }
-            ]
+          "itemName": "Test 1",
+          "textDescription": "e12"
         },
         {
-            "boardName": "Dumb",
-            "items": [
-                {
-                    "itemName": "Test 3",
-                    "textDescription": "dsldas"
-                },
-                {
-                    "itemName": "Test 4",
-                    "textDescription": "DASD"
-                },
-                {
-                    "itemName": "Test 5",
-                    "textDescription": "BLABLLSDALLDJWLJ"
-                }
-            ]
-        },
-        {
-            "boardName": "Tijn plan",
-            "items": [
-                {
-                    "itemName": "Tijn verkrachten",
-                    "textDescription": "Naar zijn huis en glijmiddel gebruiken"
-                },
-                {
-                    "itemName": "Tijn Kidnappen",
-                    "textDescription": "Naar zijn huis en knockout slaan"
-                },
-                {
-                    "itemName": "Tijn aanraken",
-                    "textDescription": "Naar zijn huis en hem aanraken"
-                },
-                {
-                    "itemName": "Jordy neuken",
-                    "textDescription": "Jordy zijn piemel zuigen"
-                }
-            ]
+          "itemName": "Test 2",
+          "textDescription": "352"
         }
-    ]
+      ]
+    }
+  ]
 }
