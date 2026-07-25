@@ -2,103 +2,15 @@
     "title": "Test",
     "boards": [
         {
-            "boardName": "das",
+            "boardName": "Board 1",
             "items": [
                 {
                     "itemName": "das",
                     "textDescription": ""
                 },
                 {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                }
-            ]
-        },
-        {
-            "boardName": "AS",
-            "items": [
-                {
-                    "itemName": "das",
-                    "textDescription": "das"
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                }
-            ]
-        },
-        {
-            "boardName": "Title",
-            "items": [
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                },
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                }
-            ]
-        },
-        {
-            "boardName": "",
-            "items": [
-                {
-                    "itemName": "",
-                    "textDescription": ""
-                }
-            ]
-        },
-        {
-            "boardName": "das",
-            "items": [
-                {
-                    "itemName": "",
-                    "textDescription": ""
+                    "itemName": "Frikandel",
+                    "textDescription": "Is lekker"
                 }
             ]
         }

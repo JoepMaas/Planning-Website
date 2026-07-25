@@ -158,3 +158,27 @@
    
     font-size: 2.8vw;
 }
+
+.SaveButton {
+    position: absolute;
+    z-index: 10;
+    margin-left: 31vw;
+    margin-top: 1.1vw;
+    background-color: rgb(49, 49, 49);
+    border: none;
+    border-radius: 2vw;
+    color: rgb(49, 49, 49);
+
+    transition: width 1s ease 0s, height 1s ease 0s, border-radius .2s ease 0s;
+}
+
+.SaveButton:hover {
+    margin-left: 30vw;
+    margin-top: 1.1vw;
+    width: 6vw;
+    height: 3vw;
+    font-size: 1vw;
+    color: white;
+    border-radius: .2vw;
+    cursor: pointer;
+}
